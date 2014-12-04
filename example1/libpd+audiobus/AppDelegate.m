@@ -16,8 +16,8 @@
     // Override point for customization after application launch.
     
     // Start our audio session
-    [[AudioManager sharedInstance] start];
-    
+	[AudioManager sharedInstance].active = YES;
+	
     return YES;
 }
 							
