@@ -1,4 +1,4 @@
 libpd-audiobus
 ==============
 
-LibPd and Audiobus examples
+LibPd and Audiobus example - Working with Audiobus v2.1.5

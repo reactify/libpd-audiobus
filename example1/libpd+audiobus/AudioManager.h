@@ -7,15 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PdBase.h"
 
-@interface AudioManager : NSObject <PdReceiverDelegate>
+@interface AudioManager : NSObject
 
-+ (AudioManager *)sharedInstance;
+@property (nonatomic, getter = isActive) BOOL active;
 
-@property (nonatomic, readonly, getter = isActive) BOOL active;
-
-- (void)start;
-- (void)stop;
++ (instancetype)sharedInstance;
 
 @end
