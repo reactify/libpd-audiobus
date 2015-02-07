@@ -11,4 +11,4 @@ The ABAudiobusController needs access to our app’s AudioUnit. In libpd, this r
 
 This will allow us to access the (previously) protected PdAudioUnit property. In your audio session setup, make sure to change the #import “PdAudioController.h” line to our new “PdAudioController_AB.h”.
 
-The AudioController class handles changes to Aubiobus connections, enabling Pd mic input if our app is being used as a Filter or Receiver, and muting it when in Sender mode, instead playing a drum loop.
+The AudioManager class handles changes to Aubiobus connections, enabling Pd mic input if our app is being used as a Filter or Receiver, and muting it when in Sender mode, instead playing a drum loop.
